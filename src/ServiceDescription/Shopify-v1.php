@@ -3050,7 +3050,7 @@ return [
             'uri'              => 'admin/api/{version}/orders/{id}/risks.json',
             'responseModel'    => 'GenericModel',
             'summary'          => 'Retrieve order risk',
-            'data'             => ['root_key' => 'order'],
+            'data'             => ['root_key' => 'risk'],
             'parameters'       => [
                 'version' => [
                     'description' => 'API version',
