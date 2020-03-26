@@ -217,6 +217,7 @@ use ZfrShopify\Exception\RuntimeException;
  * @method array closeOrder(array $args = []) {@command Shopify CloseOrder}
  * @method array openOrder(array $args = []) {@command Shopify OpenOrder}
  * @method array cancelOrder(array $args = []) {@command Shopify CancelOrder}
+ * @method array getOrderRisk(array $args = []){@command Shopify GetOrder Risk}
  *
  * DRAFT ORDER RELATED METHODS:
  *

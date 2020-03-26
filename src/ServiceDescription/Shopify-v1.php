@@ -3045,6 +3045,30 @@ return [
                 'location' => 'json',
             ],
         ],
+        'GetOrderRisk' => [
+            'httpMethod'       => 'GET',
+            'uri'              => 'admin/api/{version}/orders/{id}/risks.json',
+            'responseModel'    => 'GenericModel',
+            'summary'          => 'Retrieve order risk',
+            'data'             => ['root_key' => 'order'],
+            'parameters'       => [
+                'version' => [
+                    'description' => 'API version',
+                    'location'    => 'uri',
+                    'type'        => 'string',
+                    'required'    => true
+                ],
+                'id' => [
+                    'description' => 'Order ID',
+                    'location'    => 'uri',
+                    'type'        => 'integer',
+                    'required'    => true
+                ],
+            ],
+            'additionalParameters' => [
+                'location' => 'query',
+            ],
+        ],
 
         /**
          * --------------------------------------------------------------------------------
